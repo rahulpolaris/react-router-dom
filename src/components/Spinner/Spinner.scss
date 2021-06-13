@@ -1,0 +1,60 @@
+
+
+#Spinner{
+    height: 8vh;
+    width: 8vh;
+    // border:2px solid green;
+    position: relative;
+    .spin{
+        // border:0.5px solid red;
+        height: 33.33%;
+        width:100%;
+        position: absolute;
+        top:33.33%;
+        left:50%;
+        transform-origin: left center;
+        transform: rotateZ(-90deg);
+
+        span{
+            height: 100%;
+            width:33.33%;
+            background-color: blueviolet;
+            border-radius: 100px;
+            display: block;
+            margin-left: auto;
+            
+        }
+        
+    }
+
+}
+
+@keyframes spinnnn{
+    from{
+        transform: rotateZ(-90deg);
+    }
+    to{
+        transform: rotateZ(270deg);
+    }
+}
+.spin1{
+    animation-name: spinnnn;
+    animation-duration: 1.5s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.spin2{
+    animation-name: spinnnn;
+    animation-duration: 1.5s;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.spin3{
+    animation-name: spinnnn;
+    animation-duration: 1.5s;
+    animation-delay: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}

@@ -1,0 +1,30 @@
+
+
+#Nav{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 8vh;
+    background-color: rgb(61, 60, 60);
+    a{
+        color:white;
+        text-decoration: underline;
+    }
+    h2{
+        margin: 0 auto;
+    }
+    ul{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        list-style-type: none;
+        font-weight: 600;
+        text-align: center;
+        margin: auto 0;
+
+    }
+}
